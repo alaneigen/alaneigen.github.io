@@ -1,0 +1,4 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Code</title>
+<style>body{font-family:-apple-system,sans-serif;padding:24px;background:#111;color:#eee}code{display:block;word-break:break-all;background:#222;padding:14px;border-radius:8px;font-size:15px;margin:12px 0}button{font-size:18px;padding:12px 20px;border-radius:8px;border:0;background:#3e6ae1;color:#fff}</style></head>
+<body><h2>Sign-in complete</h2><p>Copy this code and give it to TeslaBot:</p><code id="c">(no code found)</code><button onclick="navigator.clipboard.writeText(document.getElementById('c').textContent);this.textContent='Copied'">Copy code</button>
+<script>var p=new URLSearchParams(location.search);if(p.get('code'))document.getElementById('c').textContent=p.get('code');else if(p.get('error'))document.getElementById('c').textContent='Error: '+p.get('error')+' '+(p.get('error_description')||'');</script></body></html>
